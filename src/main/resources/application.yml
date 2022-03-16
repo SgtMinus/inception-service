@@ -1,0 +1,17 @@
+server:
+  port: ${SERVER_PORT:9090}
+
+spring:
+  jackson:
+    default-property-inclusion: non_null
+  datasource:
+    url: jdbc:postgresql://${PSQL_URL:localhost:5432}/${PSQL_DB:inception}
+    username: ${PSQL_USER:admin}
+    password: ${PSQL_PASSWORD:admin}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL94Dialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+

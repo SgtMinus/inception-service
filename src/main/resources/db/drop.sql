@@ -1,0 +1,10 @@
+drop table person_data cascade ;
+drop table app_user cascade ;
+drop table dream_order cascade ;
+drop table dream cascade ;
+drop table dream_strategy cascade ;
+drop table dream_strategy_test cascade ;
+drop table dream_stage cascade ;
+drop table dream_strategy_dream_stage cascade ;
+drop table dream_stage_participant cascade ;
+drop table dream_stage_dream_stage_participant cascade ;

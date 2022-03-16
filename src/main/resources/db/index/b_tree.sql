@@ -1,0 +1,3 @@
+CREATE INDEX test_probability_index ON dream_strategy_test USING btree(dream_strategy_chain_success_probability);
+
+CREATE INDEX result_probability_index on dream USING btree(result_success_probability);
